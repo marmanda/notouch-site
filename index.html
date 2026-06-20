@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 1000px;
       margin: 60px auto;
       padding: 0 20px;
       line-height: 1.6;
@@ -31,6 +31,27 @@
 
     nav a:hover {
       text-decoration: underline;
+    }
+
+    /* LAYOUT A DUE COLONNE */
+    .container {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap; /* mobile-friendly */
+    }
+
+    .text {
+      flex: 1 1 300px;
+    }
+
+    .image {
+      flex: 0 0 300px;
+    }
+
+    .image img {
+      width: 100%;
+      border-radius: 8px;
     }
 
     /* TITOLI */
@@ -65,11 +86,20 @@
     <a href="projects.html">Projects</a>
   </nav>
 
-  <!-- HEADER -->
-  <h1>NoTouch Instruments</h1>
-  <h2>Inclusive music technology and gesture‑based musical interaction</h2>
+  <!-- CONTENUTO A DUE COLONNE -->
+  <div class="container">
 
-  <p>Website under construction.</p>
+    <div class="text">
+      <h1>NoTouch Instruments</h1>
+      <h2>Inclusive music technology and gesture‑based musical interaction</h2>
+      <p>Website under construction.</p>
+    </div>
+
+    <div class="image">
+      <img src="IMAGE.jpg" alt="Notouch illustration">
+    </div>
+
+  </div>
 
 </body>
 </html>
