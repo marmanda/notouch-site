@@ -116,12 +116,13 @@ hr {
 }
 @media (max-width: 600px) {
   .logo img {
-    max-width: 120px;   /* il logo si riduce su mobile */
+    max-width: 150px;   /* più grande ma sempre sicuro */
     height: auto;
   }
 
   nav a {
-    margin-left: 12px;  /* menu più compatto */
+    margin-left: 12px;
   }
 }
+
 
