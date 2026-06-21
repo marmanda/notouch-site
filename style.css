@@ -41,8 +41,10 @@ nav {
 }
 
 .logo img {
-  height: 80px;
+  max-width: 160px;   /* impedisce al logo di uscire */
+  height: auto;
 }
+
 
 .title {
   flex: 1;
