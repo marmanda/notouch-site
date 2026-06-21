@@ -25,6 +25,10 @@ header {
   margin: 0 auto;
   padding: 0 20px;
 }
+nav {
+  display: flex;
+  align-items: center;   /* centra le voci rispetto al logo */
+}
 
 .logo img {
   height: 80px;
