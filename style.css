@@ -114,4 +114,14 @@ hr {
   border: none;
   border-top: 1px solid #ddd;
 }
+@media (max-width: 600px) {
+  .logo img {
+    max-width: 120px;   /* il logo si riduce su mobile */
+    height: auto;
+  }
+
+  nav a {
+    margin-left: 12px;  /* menu più compatto */
+  }
+}
 
