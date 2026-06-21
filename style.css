@@ -11,10 +11,15 @@ body {
 
 /* HEADER */
 header {
-  background-color: #eef6ff;
-  border-bottom: 1px solid #ddd;
+  background: linear-gradient(
+    to bottom,
+    #eef6ff 0%,
+    #d9e8f7 100%
+  );
+  border-bottom: 1px solid #ccc;
   padding: 20px 0;
 }
+
 
 .header-container {
   display: flex;
