@@ -13,10 +13,10 @@ body {
 header {
   background: linear-gradient(
     to bottom,
-    #eef6ff 0%,
-    #d9e8f7 100%
+    #e6f0ff 0%,
+    #c7d8ee 100%
   );
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #bbb;
   padding: 20px 0;
 }
 
