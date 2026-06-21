@@ -28,6 +28,7 @@ header {
 nav {
   display: flex;
   align-items: center;   /* centra le voci rispetto al logo */
+  margin-left: 24px;
 }
 
 .logo img {
