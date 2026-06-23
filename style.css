@@ -30,4 +30,81 @@ header {
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
-  padding
+  padding: 0 20px;
+}
+
+/* LOGO — mobile first */
+.logo img {
+  width: 160px;
+  height: auto;
+}
+
+/* LOGO — desktop */
+@media (min-width: 768px) {
+  .logo img {
+    width: 320px;
+  }
+}
+
+/* ============================
+   NAV MENU
+============================ */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   LAYOUT CONTENUTO
+============================ */
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1 1 300px;
+}
+
+.image {
+  flex: 0 0 300px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ============================
+   TIPOGRAFIA
+============================ */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+hr {
+  margin: 60px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
