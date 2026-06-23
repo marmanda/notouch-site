@@ -1,4 +1,6 @@
-/* BODY */
+/* ============================
+   BODY
+============================ */
 body {
   font-family: Arial, sans-serif;
   max-width: 1000px;
@@ -6,24 +8,20 @@ body {
   padding: 0 20px;
   line-height: 1.6;
   color: #222;
-  background-color: #eef6ff; /* azzurro tenue */
+  background-color: #eef6ff;
 }
 
-/* HEADER */
+/* ============================
+   HEADER
+============================ */
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(
-    to bottom,
-    #eef6ff 0%,
-    #d9e8f7 100%
-  );
+  background: linear-gradient(to bottom, #eef6ff 0%, #d9e8f7 100%);
   border-bottom: 1px solid #ccc;
   padding: 20px 0;
 }
-
-
 
 .header-container {
   display: flex;
@@ -32,99 +30,4 @@ header {
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-nav {
-  display: flex;
-  align-items: center;   /* centra le voci rispetto al logo */
-  margin-left: 24px;
-}
-
-.logo img {
-  max-width: 160px;   /* impedisce al logo di uscire */
-  height: auto;
-}
-
-
-.title {
-  flex: 1;
-  margin-left: 20px;
-}
-
-.title h1 {
-  font-size: 2rem;
-  margin: 0;
-}
-
-.title h2 {
-  font-size: 1rem;
-  font-weight: 300;
-  color: #555;
-  margin: 0;
-}
-
-/* MENU */
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* LAYOUT A DUE COLONNE */
-.container {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.text {
-  flex: 1 1 300px;
-}
-
-.image {
-  flex: 0 0 300px;
-}
-
-.image img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-/* TIPOGRAFIA */
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-p {
-  margin-top: 2rem;
-  font-size: 1rem;
-  color: #444;
-}
-
-hr {
-  margin: 60px 0;
-  border: none;
-  border-top: 1px solid #ddd;
-}
-/* LOGO: dimensioni base (mobile-first) */
-.logo img {
-  width: 140px;   /* aumenta pure a 160–180 se vuoi */
-  height: auto;
-}
-
-/* VERSIONE DESKTOP */
-@media (min-width: 768px) {
-  .logo img {
-    width: 400px;   /* qui decidi la dimensione desktop */
-  }
-}
-
-
+  padding
