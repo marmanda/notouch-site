@@ -114,7 +114,7 @@ hr {
 ============================ */
 footer {
   margin-top: 40px;
-  padding: 12px 0;
+  padding: 8px 0;
   background: #c8d9eb;        /* più scuro del body */
     border-top: 1px solid #ccc;
   
@@ -127,7 +127,7 @@ footer {
   padding: 0 20px;
   text-align: center;
   color: #333;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .footer-container a {
