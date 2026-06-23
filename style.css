@@ -116,7 +116,7 @@ footer {
   margin-top: 60px;
   padding: 30px 0;
   background: #d9e8f7; /* stesso tono dell’header */
-  border-top: 1px solid #ccc;
+  border-top: 3px double #999; /* doppia linea */
 }
 
 .footer-container {
