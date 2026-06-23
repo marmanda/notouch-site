@@ -114,27 +114,30 @@ hr {
 ============================ */
 footer {
   margin-top: 40px;
-  padding: 8px 0;
-  background: #c8d9eb;        /* più scuro del body */
-    border-top: 1px solid #ccc;
-  
+  padding: 6px 0;                 /* altezza minima */
+  background: transparent;        /* nessuno sfondo */
+  border-top: 2px solid #666;     /* linea singola elegante */
 }
-
 
 .footer-container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
-  color: #333;
-  font-size: 0.8rem;
+  color: #444;
+  font-size: 0.75rem;             /* molto discreto */
 }
 
 .footer-container a {
-  color: #333;
-  font-weight: 600;
+  color: #444;
+  font-weight: 500;
   text-decoration: none;
 }
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
 
 .footer-container a:hover {
   text-decoration: underline;
