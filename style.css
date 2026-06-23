@@ -115,8 +115,8 @@ hr {
 footer {
   margin-top: 60px;
   padding: 30px 0;
-  background: #d9e8f7; /* stesso tono dell’header */
-  border-top: 3px double #999; /* doppia linea */
+  background: #c8d9eb; /* stesso tono dell’header */
+  border-top: 4px double #555; /* doppia linea */
 }
 
 .footer-container {
