@@ -42,7 +42,7 @@ header {
 /* LOGO — desktop */
 @media (min-width: 768px) {
   .logo img {
-    width: 320px;
+    width: 400px;
   }
 }
 
