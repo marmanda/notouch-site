@@ -114,14 +114,16 @@ hr {
   border: none;
   border-top: 1px solid #ddd;
 }
-@media (max-width: 600px) {
-  .logo img {
-    max-width: 150px;   /* più grande ma sempre sicuro */
-    height: auto;
-  }
+/* LOGO: dimensioni base (mobile-first) */
+.logo img {
+  width: 140px;   /* aumenta pure a 160–180 se vuoi */
+  height: auto;
+}
 
-  nav a {
-    margin-left: 12px;
+/* VERSIONE DESKTOP */
+@media (min-width: 768px) {
+  .logo img {
+    width: 220px;   /* qui decidi la dimensione desktop */
   }
 }
 
