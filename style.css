@@ -1,4 +1,13 @@
 /* ============================
+   RESET DI BASE
+============================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================
    BODY
 ============================ */
 body {
@@ -70,16 +79,14 @@ nav a:hover {
 ============================ */
 .container {
   display: flex;
-   flex-direction: column;  /* 🔥 aggiungi questa */
+  flex-direction: column;
   gap: 40px;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 .text {
-  flex: 0 0 100%;   /* 🔥 fondamentale */
+  flex: 0 0 100%;
 }
-
 
 .image img {
   width: 100%;
@@ -108,13 +115,96 @@ hr {
 }
 
 /* ============================
+   FIGURE STANDARDIZZATE
+============================ */
+.figures-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.figures-column figure {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.figures-column figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.figures-column figure figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ============================
+   IMAGE ROW (sezione gallery)
+============================ */
+.image-row {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.image-item {
+  width: 300px;
+  position: relative;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-item p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+  color: white;
+  font-size: 0.95rem;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* ============================
+   PROJECTS
+============================ */
+.project {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.project img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-text {
+  max-width: 500px;
+}
+
+/* ============================
    FOOTER
 ============================ */
 footer {
   margin-top: 40px;
-  padding: 6px 0;                 /* altezza minima */
-  background: transparent;        /* nessuno sfondo */
-  border-top: 2px solid #666;     /* linea singola elegante */
+  padding: 6px 0;
+  background: transparent;
+  border-top: 2px solid #666;
 }
 
 .footer-container {
@@ -123,7 +213,7 @@ footer {
   padding: 0 20px;
   text-align: center;
   color: #444;
-  font-size: 0.75rem;             /* molto discreto */
+  font-size: 0.75rem;
 }
 
 .footer-container a {
@@ -136,83 +226,3 @@ footer {
   text-decoration: underline;
 }
 
-
-.footer-container a:hover {
-  text-decoration: underline;
-}
-
-/* ============================
-   IMAGES
-============================ */
-.image-row {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: nowrap;   /* 🔥 blocca il ritorno a capo */
-}
-
-
-.image-item {
-  width: 300px;             /* 🔥 più larghe */
-}
-
-.image-item img {
-  width: 100%;
-  height: auto;           /* ✅ NON forzare altezza */
-  border-radius: 10px;
-}
-
-
-/* caption sopra */
-.image-item p {
-  position: absolute;
-  bottom: 10px;          /* posizione */
-  left: 10px;
-  margin: 0;
-  color: white;
-  font-size: 0.95rem;
-  background: rgba(0,0,0,0.5);  /* sfondo scuro trasparente */
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-.project {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 30px;
-  align-items: center;
-}
-
-.project img {
-  width: 250px;      /* 🔥 perfetto per verticali */
-  height: auto;
-  border-radius: 10px;
-}
-
-.project-text {
-  max-width: 500px;
-}
-/* ============================
-   FIGURE & IMMAGINI GENERICHE
-============================ */
-
-/* tutte le immagini non già gestite da classi specifiche */
-main img,
-.content img,
-figure img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 2rem auto;
-}
-
-/* figure */
-figure {
-  margin: 2.5rem auto;
-  text-align: center;
-}
-
-figure figcaption {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 0.5rem;
-}
