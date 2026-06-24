@@ -145,27 +145,33 @@ footer {
    IMAGES
 ============================ */
 .image-row {
-.image-row {
   display: flex;
   gap: 20px;
   justify-content: center;
-  align-items: stretch;   /* ✅ tutti stessa altezza */
 }
 
 .image-item {
+  position: relative;   /* 🔥 serve per sovrapporre testo */
   width: 30%;
-  display: flex;
-  flex-direction: column;
 }
 
 .image-item img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
+  display: block;
   border-radius: 10px;
 }
 
+/* caption sopra */
 .image-item p {
-  margin-top: 10px;
-  text-align: center;
+  position: absolute;
+  bottom: 10px;          /* posizione */
+  left: 10px;
+  margin: 0;
+  color: white;
+  font-size: 0.95rem;
+  background: rgba(0,0,0,0.5);  /* sfondo scuro trasparente */
+  padding: 5px 10px;
+  border-radius: 5px;
 }
