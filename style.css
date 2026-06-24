@@ -160,13 +160,22 @@ eight: 200px;        /* altezza fissa */
   border-radius: 10px;
 
 }
-.image-item {
-  text-align: center;
-  width: 30%;
+
+.image-item img {
+  width: 100%;
+  height: 200px;        /* altezza identica */
+  object-fit: cover;    /* taglia bene */
+  display: block;
 }
+.image-item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .image-item p {
   margin-top: 8px;
-  font-size: 0.9rem;
-  color: #555;
+  text-align: center;
 }
+
