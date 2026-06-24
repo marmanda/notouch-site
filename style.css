@@ -145,14 +145,15 @@ footer {
    IMAGES
 ============================ */
 .image-row {
-.image-row {
   display: flex;
-  gap: 30px;              /* un po’ più aria */
+  gap: 30px;
   justify-content: center;
+  flex-wrap: nowrap;   /* 🔥 blocca il ritorno a capo */
 }
 
+
 .image-item {
-  width: 32%;             /* 🔥 più larghe */
+  width: 300px;             /* 🔥 più larghe */
 }
 
 .image-item img {
