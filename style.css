@@ -76,7 +76,7 @@ nav a:hover {
 }
 
 .text {
-  flex: 1 1 300px;
+  flex: 0 0 100%;   /* 🔥 fondamentale */
 }
 
 .image {
