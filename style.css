@@ -145,26 +145,27 @@ footer {
    IMAGES
 ============================ */
 .image-row {
+.image-row {
   display: flex;
   gap: 20px;
   justify-content: center;
-   align-items: flex-start;  /* 🔥 QUESTA SISTEMA TUTTO */
+  align-items: stretch;   /* ✅ tutti stessa altezza */
 }
 
 .image-item {
   width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-item img {
   width: 100%;
-  height: 180px;        /* uguale per tutte */
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
-  display: block;
 }
+
 .image-item p {
-  height: 40px;         /* 🔥 stessa altezza per tutte */
-  margin-top: 8px;
+  margin-top: 10px;
   text-align: center;
-  font-size: 0.9rem;
 }
