@@ -148,6 +148,7 @@ footer {
 ============================ */
 .image-row {
   display: flex;
+   flex-direction: column; /* ✅ questo forza verticale */
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
