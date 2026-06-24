@@ -161,3 +161,9 @@ footer {
   border-radius: 10px;
   display: block;
 }
+.image-item p {
+  height: 40px;         /* 🔥 stessa altezza per tutte */
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+}
