@@ -148,6 +148,7 @@ footer {
   display: flex;
   gap: 20px;
   justify-content: center;
+   align-items: flex-start;  /* 🔥 QUESTA SISTEMA TUTTO */
 }
 
 .image-item {
