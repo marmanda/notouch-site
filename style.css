@@ -153,9 +153,12 @@ footer {
 }
 
 .image-row img {
-  width: 30%;
-  height: auto;
+  width: 100%;
+ 
+eight: 200px;        /* altezza fissa */
+  object-fit: cover;    /* 🔥 riempie bene */
   border-radius: 10px;
+
 }
 .image-item {
   text-align: center;
