@@ -152,7 +152,7 @@ footer {
 
 .image-item {
   position: relative;   /* 🔥 serve per sovrapporre testo */
-  width: 30%;
+  width: 100%;
 }
 
 .image-item img {
