@@ -157,3 +157,13 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.image-item {
+  text-align: center;
+  width: 30%;
+}
+
+.image-item p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
