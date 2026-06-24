@@ -148,34 +148,16 @@ footer {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
-  flex: 0 0 100%; /* 🔥 QUESTO È LA CHIAVE */
 }
 
-.image-row img {
-  width: 100%;
- 
-eight: 200px;        /* altezza fissa */
-  object-fit: cover;    /* 🔥 riempie bene */
-  border-radius: 10px;
-
+.image-item {
+  width: 30%;
 }
 
 .image-item img {
-  width: 100%;
-  height: 200px;        /* altezza identica */
-  object-fit: cover;    /* taglia bene */
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
   display: block;
+  border-radius: 10px;
 }
-.image-item {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.image-item p {
-  margin-top: 8px;
-  text-align: center;
-}
-
