@@ -70,6 +70,7 @@ nav a:hover {
 ============================ */
 .container {
   display: flex;
+   flex-direction: column;  /* 🔥 aggiungi questa */
   gap: 40px;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -79,9 +80,6 @@ nav a:hover {
   flex: 0 0 100%;   /* 🔥 fondamentale */
 }
 
-.image {
-  flex: 0 0 300px;
-}
 
 .image img {
   width: 100%;
