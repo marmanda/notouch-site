@@ -191,3 +191,28 @@ footer {
 .project-text {
   max-width: 500px;
 }
+/* ============================
+   FIGURE & IMMAGINI GENERICHE
+============================ */
+
+/* tutte le immagini non già gestite da classi specifiche */
+main img,
+.content img,
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
+
+/* figure */
+figure {
+  margin: 2.5rem auto;
+  text-align: center;
+}
+
+figure figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
