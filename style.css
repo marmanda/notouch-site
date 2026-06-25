@@ -117,6 +117,17 @@ hr {
 /* ============================
    FIGURE STANDARDIZZATE
 ============================ */
+.figure img {
+  width: 240px;
+   max-width: 80%;
+  height: auto;
+}
+.figure {
+  display: block;
+  margin: 1.2em auto;
+  text-align: center;
+}
+
 .figures-column {
   display: flex;
   flex-direction: column;
