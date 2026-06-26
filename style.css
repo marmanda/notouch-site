@@ -113,60 +113,50 @@ hr {
    PROJECTS — colonne fisse
 ============================ */
 .project {
+.project {
   display: flex;
   gap: 30px;
-  align-items: flex-start;
   width: 100%;
 }
 
-/* COLONNA SINISTRA: immagine */
-.project img {
-  width: 320px;        /* larghezza fissa */
-  height: auto;
-  border-radius: 10px;
-  flex-shrink: 0;      /* impedisce che si restringa */
-}
-
-/* COLONNA DESTRA: testo */
-.project-text {
-  width: calc(100% - 350px);   /* spazio rimanente */
-  max-width: none;             /* rimuove limiti precedenti */
-}
-.project-title {
-  width: 100%;
-  margin-bottom: 10px;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-.project-title {
-  flex-basis: 100%;
-}
-.project-header {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.project-body {
+/* COLONNA SINISTRA → immagine in basso */
+.left-col {
   display: flex;
-  gap: 30px;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;   /* 👈 immagine in basso */
+  width: 320px;                /* larghezza fissa */
 }
 
-.project-body img {
-  width: 320px;
+.left-col img {
+  width: 100%;
   height: auto;
   border-radius: 10px;
   flex-shrink: 0;
 }
 
-.project-text {
+/* COLONNA DESTRA → titolo + testo in alto */
+.right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 👈 testo in alto */
   width: calc(100% - 350px);
 }
-.project {
-  display: flex;
-  align-items: flex-end; /* 👈 immagine in basso, testo in alto */
-}
 
+/* MOBILE */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .left-col,
+  .right-col {
+    width: 100%;
+  }
+
+  .left-col {
+    justify-content: flex-start; /* immagine torna in alto su mobile */
+  }
+}
 
 /* ============================
    MOBILE — layout verticale
