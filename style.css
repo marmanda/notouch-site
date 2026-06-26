@@ -191,10 +191,27 @@ footer {
 /* ============================
    ACTIVE
 ============================ */
-nav a.active {
+.menu {
+  list-style: none;        /* 👈 toglie i pallini */
+  padding: 0;
+  margin: 0;
+
+  display: flex;           /* 👈 voci in linea */
+  gap: 20px;               /* spazio tra le voci */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+.menu a.active {
   font-weight: 600;
-  color: #000;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #333;   /* 👈 evidenziazione elegante */
 }
 
 
