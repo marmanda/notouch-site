@@ -163,27 +163,38 @@ hr {
 ============================ */
 footer {
   margin-top: 40px;
-  padding: 6px 0;
-  background: transparent;
-  border-top: 2px solid #666;
+  padding: 12px 0;
+  background: #c8d9eb;
+  border-top: 6px double #333;
 }
 
 .footer-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
-  text-align: center;
-  color: #444;
-  font-size: 0.75rem;
+
+  display: flex;
+  flex-direction: column;     /* una colonna */
+  align-items: center;        /* 👈 CENTRA orizzontalmente */
+  text-align: center;         /* 👈 CENTRA il testo */
+  gap: 2px;                   /* righe molto vicine */
+}
+
+.footer-container p {
+  margin: 0;                  /* elimina margini verticali */
+  font-size: 0.85rem;
+  line-height: 1.2;           /* compatta ulteriormente */
+  color: #333;
 }
 
 .footer-container a {
-  color: #444;
-  font-weight: 500;
+  color: #333;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .footer-container a:hover {
   text-decoration: underline;
 }
+
 
