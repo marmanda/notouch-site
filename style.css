@@ -174,27 +174,17 @@ footer {
   padding: 0 20px;
 
   display: flex;
-  flex-direction: column;     /* una colonna */
-  align-items: center;        /* 👈 centra orizzontalmente */
-  text-align: center;         /* 👈 centra il testo */
-  gap: 2px;                   /* righe molto vicine */
+  flex-direction: column;
+  align-items: center !important;   /* 👈 forza il centraggio */
+  text-align: center !important;    /* 👈 centra il testo */
+  gap: 2px;
 }
 
 .footer-container p {
-  margin: 0;                  /* elimina margini verticali */
+  margin: 0;
   font-size: 0.85rem;
-  line-height: 1.2;           /* compatta ulteriormente */
+  line-height: 1.2;
   color: #333;
-}
-
-.footer-container a {
-  color: #333;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.footer-container a:hover {
-  text-decoration: underline;
 }
 
 
