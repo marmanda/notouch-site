@@ -132,6 +132,15 @@ hr {
   width: calc(100% - 350px);   /* spazio rimanente */
   max-width: none;             /* rimuove limiti precedenti */
 }
+.project-title {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.project-title {
+  flex-basis: 100%;
+}
 
 /* ============================
    MOBILE — layout verticale
