@@ -141,6 +141,28 @@ hr {
 .project-title {
   flex-basis: 100%;
 }
+.project-header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.project-body {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.project-body img {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.project-text {
+  width: calc(100% - 350px);
+}
+
 
 /* ============================
    MOBILE — layout verticale
