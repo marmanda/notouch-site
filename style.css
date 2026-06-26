@@ -165,7 +165,7 @@ footer {
   margin-top: 40px;
   padding: 12px 0;
   background: #c8d9eb;
-  border-top: 6px double #333;
+  border-top: 6px single #333;
 }
 
 .footer-container {
