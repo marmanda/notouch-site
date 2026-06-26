@@ -166,7 +166,7 @@ hr {
 footer {
   margin-top: 40px;
   padding: 12px 0;
-  background: #c8d9eb;
+  background: linear-gradient(to bottom, #cae5eb 0%, #eef6ff  100%);
   border-top: 6px solid #333;
 }
 
