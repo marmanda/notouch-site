@@ -188,6 +188,15 @@ footer {
   line-height: 1.2;
   color: #333;
 }
+/* ============================
+   ACTIVE
+============================ */
+nav a.active {
+  font-weight: 600;
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
 
 
 
