@@ -88,11 +88,6 @@ nav a:hover {
   flex: 0 0 100%;
 }
 
-.image img {
-  width: 100%;
-  border-radius: 8px;
-}
-
 /* ============================
    TIPOGRAFIA
 ============================ */
@@ -113,16 +108,40 @@ hr {
   border: none;
   border-top: 1px solid #ddd;
 }
+
 /* ============================
-  IMMAGINI
+   PROJECTS (layout a due colonne)
 ============================ */
-img {
-  display: block;
-  width: 100%;
-  max-width: 650px;
+.project {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+/* IMMAGINI GRANDI E COERENTI */
+.project img {
+  width: 35%;          /* immagine più grande */
+  max-width: 350px;    /* limite superiore elegante */
   height: auto;
-  margin: 2rem auto;
   border-radius: 10px;
+  flex-shrink: 0;      /* evita schiacciamenti */
+}
+
+.project-text {
+  max-width: 600px;
+}
+
+/* MOBILE: immagine sopra, testo sotto */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* ============================
@@ -154,12 +173,3 @@ footer {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .project {
-    flex-direction: column;
-  }
-
-  .project img {
-    width: 100%;
-  }
-}
