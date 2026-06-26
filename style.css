@@ -162,6 +162,10 @@ hr {
 .project-text {
   width: calc(100% - 350px);
 }
+.project {
+  display: flex;
+  align-items: flex-end; /* 👈 immagine in basso, testo in alto */
+}
 
 
 /* ============================
