@@ -175,8 +175,8 @@ footer {
 
   display: flex;
   flex-direction: column;     /* una colonna */
-  align-items: center;        /* 👈 CENTRA orizzontalmente */
-  text-align: center;         /* 👈 CENTRA il testo */
+  align-items: center;        /* 👈 centra orizzontalmente */
+  text-align: center;         /* 👈 centra il testo */
   gap: 2px;                   /* righe molto vicine */
 }
 
@@ -196,5 +196,6 @@ footer {
 .footer-container a:hover {
   text-decoration: underline;
 }
+
 
 
