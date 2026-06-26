@@ -110,7 +110,7 @@ hr {
 }
 
 /* ============================
-   PROJECTS (layout a due colonne)
+   PROJECTS — colonne fisse
 ============================ */
 .project {
   display: flex;
@@ -119,28 +119,35 @@ hr {
   width: 100%;
 }
 
+/* COLONNA SINISTRA: immagine */
 .project img {
-  width: 320px;      /* colonna sinistra fissa */
+  width: 320px;        /* larghezza fissa */
   height: auto;
   border-radius: 10px;
-  flex-shrink: 0;    /* impedisce che si restringa */
+  flex-shrink: 0;      /* impedisce che si restringa */
 }
 
+/* COLONNA DESTRA: testo */
 .project-text {
-  width: calc(100% - 350px);   /* colonna destra fissa */
-  max-width: none;             /* rimuove il limite precedente */
+  width: calc(100% - 350px);   /* spazio rimanente */
+  max-width: none;             /* rimuove limiti precedenti */
 }
 
-
-/* MOBILE: immagine sopra, testo sotto */
+/* ============================
+   MOBILE — layout verticale
+============================ */
 @media (max-width: 768px) {
   .project {
     flex-direction: column;
   }
 
   .project img {
-    width: 100%;
+    width: 100%;       /* immagine grande su mobile */
     max-width: 100%;
+  }
+
+  .project-text {
+    width: 100%;
   }
 }
 
