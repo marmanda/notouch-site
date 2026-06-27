@@ -64,8 +64,12 @@ nav {
 
 .nav a {
   text-decoration: none;
-  color: #555;
-  padding-bottom: 4px;
+  color: #666;
+  padding-bottom: 6px;
+}
+
+.nav a:hover {
+  border-bottom: 2px solid #999; /* opzionale */
 }
 
 .nav a.active {
