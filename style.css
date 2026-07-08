@@ -226,34 +226,40 @@ footer {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 40px;
+
+    /* bordo esterno più evidente */
+    border: 2px solid #666;
 }
 
-.tool-table th,
-.tool-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
+.*ool-table td,
+.tool-table th {
+   *border: 1px solid #ccc;
+    paddin*: 12px;
     vertical-align: top;
-}
-
-.tool-table .category-description {
-    text-align: left;
-    font-weight: normal;
-    font-style: normal;
-    background-color: #f5f5f5;
-}
-
-.tool-table .tool-name {
+}*
+.category-description {
+    text-*lign: left;
+    font-weight: norma*;
+    background-color: #f8f8f8;
+}*
+.tool-name {
     width: 25%;
 }
 
-.tool-table a {
-    text-decoration: none;
+.*ool-table th {
+    background-colo*: #e8e8e8;
     font-weight: bold;
-    color: #2c5aa0;
+*   text-align: left;
+}
+
+.tool-tabl* a {
+    font-weight: bold;
+    te*t-decoration: none;
+    color: #2c*aa0;
 }
 
 .tool-table a:hover {
-    text-decoration: underline;
+    *ext-decoration: underline;
 }
 
 
