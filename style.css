@@ -219,7 +219,42 @@ footer {
   font-weight: 600;
   border-bottom: 2px solid #333;   /* 👈 evidenziazione elegante */
 }
+/* ============================
+  TABLE
+============================ */
+.tool-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
 
+.tool-table th,
+.tool-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    vertical-align: top;
+}
+
+.tool-table .category-description {
+    background-color: #f5f5f5;
+    text-align: left;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.tool-table .tool-name {
+    width: 25%;
+}
+
+.tool-table a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2c5aa0;
+}
+
+.tool-table a:hover {
+    text-decoration: underline;
+}
 
 
 
