@@ -222,45 +222,34 @@ footer {
 /* ============================
   TABLE
 ============================ */
+.category {
+    margin-bottom: 50px;
+}
+
+.category-intro {
+    margin: 0 0 12px 0;
+}
+
 .tool-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 40px;
-
-    /* bordo esterno più evidente */
     border: 2px solid #666;
 }
 
-.*ool-table td,
-.tool-table th {
-   *border: 1px solid #ccc;
-    paddin*: 12px;
+.tool-table th,
+.tool-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
     vertical-align: top;
-}*
-.category-description {
-    text-*lign: left;
-    font-weight: norma*;
-    background-color: #f8f8f8;
-}*
-.tool-name {
-    width: 25%;
 }
 
-.*ool-table th {
-    background-colo*: #e8e8e8;
+.tool-table th {
+    background: #efefef;
     font-weight: bold;
-*   text-align: left;
 }
 
-.tool-tabl* a {
+.tool-table a {
     font-weight: bold;
-    te*t-decoration: none;
-    color: #2c*aa0;
+    text-decoration: none;
 }
-
-.tool-table a:hover {
-    *ext-decoration: underline;
-}
-
-
-
