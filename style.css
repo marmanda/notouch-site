@@ -222,14 +222,6 @@ footer {
 /* ============================
   TABLE
 ============================ */
-.category {
-    margin-bottom: 50px;
-}
-
-.category-intro {
-    margin: 0 0 12px 0;
-}
-
 .tool-table {
     width: 100%;
     border-collapse: collapse;
@@ -238,18 +230,25 @@ footer {
 
 .tool-table th,
 .tool-table td {
-    border: 1px solid #ccc;
-    padding: 10px;
+    padding: 10px 12px;
     text-align: left;
     vertical-align: top;
+    border-bottom: 1px solid #ddd;
 }
 
 .tool-table th {
-    background: #efefef;
+    background-color: #efefef;
     font-weight: bold;
 }
 
-.tool-table a {
-    font-weight: bold;
-    text-decoration: none;
+/* Separazione tra le colonne */
+.tool-table th:first-child,
+.tool-table td:first-child {
+    width: 25%;
+    border-right: 1px solid #999;
+}
+
+/* Evita una linea in più sotto l'ultima riga */
+.tool-table tbody tr:last-child td {
+    border-bottom: none;
 }
