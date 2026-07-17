@@ -246,6 +246,7 @@ footer {
 .tool-table td:first-child {
     width: 25%;
     border-right: 1px solid #999;
+    border-left: 1px solid #999;
 }
 
 /* Evita una linea in più sotto l'ultima riga */
