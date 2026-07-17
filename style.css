@@ -225,16 +225,18 @@ footer {
 .tool-table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed; /* 👈 colonne con larghezza uniforme */
     border: 2px solid #666;
 }
 
 /* Celle */
 .tool-table th,
 .tool-table td {
-    padding: 10px 12px;
+    padding: 10px 12px; /* 👈 evita che il contenuto tocchi il bordo */
     text-align: left;
     vertical-align: top;
     border-bottom: 1px solid #ddd;
+    word-wrap: break-word; /* 👈 evita overflow */
 }
 
 /* Header */
@@ -243,9 +245,14 @@ footer {
     font-weight: bold;
 }
 
-/* Separazione tra colonne (funziona con 2, 3, 4, N colonne) */
-.tool-table tr > *:not(:last-child) {
+/* Separazione tra colonne (funziona SEMPRE) */
+.tool-table tr > * {
     border-right: 1px solid #999;
+}
+
+/* Rimuove il bordo dalla colonna finale */
+.tool-table tr > *:last-child {
+    border-right: none;
 }
 
 /* Evita una linea in più sotto l'ultima riga */
