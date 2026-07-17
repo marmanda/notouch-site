@@ -220,7 +220,7 @@ footer {
   border-bottom: 2px solid #333;   /* 👈 evidenziazione elegante */
 }
 /* ============================
-  TABLE
+   TABLE
 ============================ */
 .tool-table {
     width: 100%;
@@ -228,6 +228,7 @@ footer {
     border: 2px solid #666;
 }
 
+/* Celle */
 .tool-table th,
 .tool-table td {
     padding: 10px 12px;
@@ -236,53 +237,26 @@ footer {
     border-bottom: 1px solid #ddd;
 }
 
+/* Header */
 .tool-table th {
     background-color: #efefef;
     font-weight: bold;
 }
 
-/* Separazione tra le colonne */
-/* ============================
-  TABLE
-============================ */
-.tool-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid #666;
-}
-
-.tool-table th,
-.tool-table td {
-    padding: 10px 12px;
-    text-align: left;
-    vertical-align: top;
-    border-bottom: 1px solid #ddd;
-}
-
-.tool-table th {
-    background-color: #efefef;
-    font-weight: bold;
-}
-
-/* Separazione tra le colonne */
+/* Separazione tra colonne */
 .tool-table th:not(:last-child),
 .tool-table td:not(:last-child) {
     border-right: 1px solid #999;
 }
-}
 
 /* Evita una linea in più sotto l'ultima riga */
 .tool-table tbody tr:last-child td {
     border-bottom: none;
 }
-  
-}
 
-/* Evita una linea in più sotto l'ultima riga */
-.tool-table tbody tr:last-child td {
-    border-bottom: none;
-}
+/* Liste dentro la tabella */
 .tool-table li {
     list-style: none;
     margin-bottom: 4px;
 }
+
