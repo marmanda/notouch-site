@@ -243,9 +243,8 @@ footer {
     font-weight: bold;
 }
 
-/* Separazione tra colonne */
-.tool-table th:not(:last-child),
-.tool-table td:not(:last-child) {
+/* Separazione tra colonne (funziona con 2, 3, 4, N colonne) */
+.tool-table tr > *:not(:last-child) {
     border-right: 1px solid #999;
 }
 
@@ -259,4 +258,3 @@ footer {
     list-style: none;
     margin-bottom: 4px;
 }
-
