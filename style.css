@@ -282,3 +282,7 @@ footer {
 .tool-table tbody tr:last-child td {
     border-bottom: none;
 }
+.tool-table li {
+    list-style: none;
+    margin-bottom: 4px;
+}
