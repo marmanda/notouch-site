@@ -121,18 +121,21 @@ hr {
    PROJECTS — colonne fisse
 ============================ */
 .project {
+  min-height: 420px;   /* 👈 tutte le sezioni avranno la stessa altezza */
   display: flex;
   gap: 30px;
-  width: 100%;
+  align-items: stretch;
 }
+
 
 /* COLONNA SINISTRA → immagine in basso */
 .left-col {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;   /* 👈 immagine in basso */
-  width: 320px;
+  justify-content: flex-end;
+  height: 420px;   /* 👈 immagine sempre alla stessa altezza */
 }
+
 
 .left-col img {
   width: 100%;
@@ -264,4 +267,16 @@ footer {
 .tool-table li {
     list-style: none;
     margin-bottom: 4px;
+}
+.project {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* opzionale, migliora la spaziatura */
+}
+.left-col,
+.right-col {
+  display: block;
+}
+.left-col img {
+  display: block;
 }
