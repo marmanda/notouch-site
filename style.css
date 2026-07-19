@@ -106,7 +106,7 @@ h2 {
 }
 
 p {
-  margin-top: 2rem;
+  margin-top: 12px;
   font-size: 1rem;
   color: #444;
 }
@@ -121,7 +121,6 @@ hr {
    PROJECTS — colonne fisse
 ============================ */
 .project {
-  min-height: 420px;   /* 👈 tutte le sezioni avranno la stessa altezza */
   display: flex;
   gap: 30px;
   align-items: stretch;
@@ -129,11 +128,12 @@ hr {
 
 
 /* COLONNA SINISTRA → immagine in basso */
-.left-col {
+.project .left-col {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 420px;   /* 👈 immagine sempre alla stessa altezza */
+  justify-content: flex-start;
+  margin-top: 40px;
+  width: 40%;
 }
 
 
@@ -268,15 +268,4 @@ footer {
     list-style: none;
     margin-bottom: 4px;
 }
-.project {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px; /* opzionale, migliora la spaziatura */
-}
-.left-col,
-.right-col {
-  display: block;
-}
-.left-col img {
-  display: block;
-}
+
