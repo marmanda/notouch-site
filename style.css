@@ -1,271 +1,315 @@
 /* ============================
-   RESET DI BASE
+   RESET
 ============================ */
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* ============================
    BODY
 ============================ */
+
 body {
-  font-family: Arial, sans-serif;
- 
-  line-height: 1.6;
-  color: #222;
-  background-color: #cae5eb;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #cae5eb;
 }
 
 /* ============================
    HEADER
 ============================ */
+
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #99bbc2;
-  border-bottom: 1px solid #ccc;
-  padding: 20px 0;
+    background: #99bbc2;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
 
-/* LOGO — mobile first */
-.logo img {
-  width: 200px;
-  height: auto;
-}
-
-/* LOGO — desktop */
-@media (min-width: 768px) {
-  .logo img {
-    width: 400px;
-  }
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    justify-content: space-between;
 }
 
 /* ============================
-   NAV MENU
+   LOGO
 ============================ */
-nav {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 400px;
+    display: block;
+}
+
+/* ============================
+   NAVIGATION
+============================ */
+
+.nav {
+    display: flex;
+    gap: 24px;
 }
 
 .nav a {
-  text-decoration: none;
-  color: #666;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 6px;
+    font-size: 0.85rem;
+    color: #666;
+    text-decoration: none;
 }
 
 .nav a:hover {
-  color: #000;
+    color: #000;
 }
 
 .nav a.active {
-  color: #000;
-  border-bottom-color: #000;
+    color: #000;
+    border-bottom-color: #000;
 }
 
 /* ============================
-   LAYOUT CONTENUTO
+   DROPDOWN MENU
 ============================ */
-.container {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.dropdown {
+    position: relative;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 220px;
+    background: #fff;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ============================
+   HERO IMAGE
+============================ */
+
+.hero {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ============================
+   CONTENT
+============================ */
+
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
 .text {
-  flex: 0 0 100%;
+    width: 100%;
 }
 
 /* ============================
-   TIPOGRAFIA
+   TYPOGRAPHY
 ============================ */
+
 h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
 p {
-  margin-top: 12px;
-  font-size: 1rem;
-  color: #444;
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #444;
 }
 
 hr {
-  margin: 60px 0;
-  border: none;
-  border-top: 1px solid #ddd;
+    margin: 60px 0;
+    border: none;
+    border-top: 1px solid #ddd;
 }
 
 /* ============================
-   PROJECTS — colonne fisse
+   PROJECTS
 ============================ */
+
 .project {
-  display: flex;
-  gap: 30px;
-  align-items: stretch;
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
 }
 
-
-/* COLONNA SINISTRA → immagine in basso */
-.project .left-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 40px;
-  width: 40%;
+.left-col {
+    width: 40%;
+    margin-top: 40px;
 }
-
 
 .left-col img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  flex-shrink: 0;
-}
-
-/* COLONNA DESTRA → testo in alto */
-.right-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* 👈 testo in alto */
-  width: calc(100% - 350px);
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .project {
-    flex-direction: column;
-  }
-
-  .left-col,
-  .right-col {
     width: 100%;
-  }
-
-  .left-col {
-    justify-content: flex-start; /* immagine torna in alto su mobile */
-  }
+    height: auto;
+    border-radius: 10px;
 }
 
+.right-col {
+    width: 60%;
+}
 
 /* ============================
-   FOOTER
+   TABLES
 ============================ */
-footer {
-  margin-top: 40px;
-  padding: 12px 0;
-  background: #99bbc2;
-  border-top: 4px solid #333;
-}
 
-.footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center !important;   /* 👈 forza il centraggio */
-  text-align: center !important;    /* 👈 centra il testo */
-  gap: 2px;
-}
-
-.footer-container p {
-  margin: 0;
-  font-size: 0.85rem;
-  line-height: 1.2;
-  color: #333;
-}
-/* ============================
-   ACTIVE
-============================ */
-.menu {
-  list-style: none;        /* 👈 toglie i pallini */
-  padding: 0;
-  margin: 0;
-
-  display: flex;           /* 👈 voci in linea */
-  gap: 20px;               /* spazio tra le voci */
-}
-
-.menu a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 400;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-}
-.menu a.active {
-  font-weight: 600;
-  border-bottom: 2px solid #333;   /* 👈 evidenziazione elegante */
-}
-/* ============================
-   TABLE
-============================ */
 .tool-table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed; /* 👈 colonne con larghezza uniforme */
+    table-layout: fixed;
     border: 2px solid #666;
 }
 
-/* Celle */
 .tool-table th,
 .tool-table td {
-    padding: 10px 12px; /* 👈 evita che il contenuto tocchi il bordo */
+    padding: 10px 12px;
     text-align: left;
     vertical-align: top;
     border-bottom: 1px solid #ddd;
-    word-wrap: break-word; /* 👈 evita overflow */
+    word-wrap: break-word;
 }
 
-/* Header */
 .tool-table th {
     background-color: #efefef;
     font-weight: bold;
 }
 
-/* Separazione tra colonne (funziona SEMPRE) */
-.tool-table tr > * {
+.tool-table tr>* {
     border-right: 1px solid #999;
 }
 
-/* Rimuove il bordo dalla colonna finale */
-.tool-table tr > *:last-child {
+.tool-table tr>*:last-child {
     border-right: none;
 }
 
-/* Evita una linea in più sotto l'ultima riga */
 .tool-table tbody tr:last-child td {
     border-bottom: none;
 }
 
-/* Liste dentro la tabella */
 .tool-table li {
     list-style: none;
     margin-bottom: 4px;
 }
 
+/* ============================
+   FOOTER
+============================ */
+
+footer {
+    margin-top: 40px;
+    padding: 12px 0;
+    background: #99bbc2;
+    border-top: 4px solid #333;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    color: #333;
+}
+
+/* ============================
+   MOBILE
+============================ */
+
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 250px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        gap: 15px;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .left-col,
+    .right-col {
+        width: 100%;
+    }
+}
+.skies-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.15);
+}
+
+.skies-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
